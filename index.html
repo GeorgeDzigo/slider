@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #sliderWrapper{
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #slider h1{
+        position: absolute;
+        bottom: 30px;
+        right: 60px;
+    }
+    #slider{
+        width: 100%;
+    }
+
+    #slider a {
+        width: 630px;
+        height: 630px;
+        overflow: hidden;
+        display: block;
+    }
+    #slider img{
+        width: 100%;
+        /* opacity: 0; */
+        transition: opacity 0.3 linear;
+        /* visibility: hidden; */
+    }
+    #slider img.active{
+        opacity: 1;
+    }
+    
+    </style>
+</head>
+<body>
+         <div id="sliderWrapper">
+
+
+            <button id="left">left</button>
+            <div id="slider"></div>
+            <button id="right">right</button>
+
+
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
